@@ -1,0 +1,127 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: #ffdd33;
+  --red: #ff4422;
+  --dark-pink: #ffebe7;
+  --light-pink: #fffaf8;
+  --dark-grey: #131313;
+  --img-gradient: linear-gradient(
+    350deg,
+    rgba(0, 0, 0, 1),
+    rgba(18, 18, 18, 0)
+  );
+  --header-gradient: linear-gradient(
+    350deg,
+    rgb(0, 0, 0),
+    rgba(227, 0, 0, 0.181)
+  );
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar {
+  font-size: 1.4rem;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.top-list-left li,
+.top-list-right li {
+  list-style: none;
+  padding: 5px 10px;
+}
+
+.top-list-left {
+  left: 0px;
+  top: 0px;
+}
+
+.top-list-right {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.top-nav {
+  background: black;
+  color: white;
+  height: 2.5rem;
+}
+
+.top-nav a {
+  color: white;
+  text-decoration: none;
+}
+.navigation a {
+  text-decoration: none;
+  color: rgb(108, 108, 108);
+}
+.navigation li {
+  list-style: none;
+  padding: 18px 15px;
+  background: #fdfdfd;
+}
+
+.fa-search {
+  position: absolute;
+  right: 0px;
+  color: lightgrey;
+  padding: 18px;
+  border: 0.5px solid rgba(48, 48, 48, 0.085);
+  transform: rotate(90deg);
+  top: 25px;
+}
+
+.fa-search:hover {
+  color: black;
+}
+
+.fest-ad {
+  background: var(--yellow);
+  padding: 5px 15px;
+}
+
+.fest-ad a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+}
+
+.main-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 60vh;
+  grid-gap: 10px;
+}
+
+.header-left {
+  background: var(--header-gradient),
+    url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FNew-Project-10.png&signature=62be7b56c9b11cfa3ca8d429c4e23c18);
+}
+
+.header-right {
+  display: grid;
+  grid-template-rows: repeat(1fr);
+  grid-gap: 10px;
+}
+
+.header-right-top {
+  background: var(--img-gradient),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Copy-of-Copy-of-Copy-of-Copy-of-...-1-1-796x417.png);
+}
+
+.header-right-bottom {
+  background: var(--img-gradient),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/earth-1149733_1920-796x529.jpg)
+      30%,
+    10%;
+}
