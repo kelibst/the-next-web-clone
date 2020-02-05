@@ -1,6 +1,6 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -42,14 +42,14 @@ html {
 }
 
 .top-list-left {
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 .top-list-right {
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 0;
+  top: 0;
 }
 .top-nav {
   background: black;
@@ -73,7 +73,7 @@ html {
 
 .fa-search {
   position: absolute;
-  right: 0px;
+  right: 0;
   color: lightgrey;
   padding: 18px;
   border: 0.5px solid rgba(48, 48, 48, 0.085);
@@ -124,4 +124,102 @@ html {
     url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/earth-1149733_1920-796x529.jpg)
       30%,
     10%;
+}
+
+
+footer{
+    font-size: 1.6rem;
+    background-color: var(--dark-grey);
+    width: 100vw;
+}
+footer ul, .footer-ul-text li {
+	list-style: none;
+	display: flex;
+	padding: 10px;
+}
+
+.footer-ul-icons > li {
+	padding: 10px;
+	background: #333;
+	border-radius: 30px;
+	margin: 10px;
+}
+footer ul li a{
+    text-decoration: none;
+    text-align: center;
+}
+.footer-ul-icons > li:hover{
+  background: black;
+}
+
+.footer-ul-text ul li a:hover{
+    color: black;
+}
+
+.footer-legal {
+  height: 9px;
+  cursor: pointer;
+}
+
+.footer-nav-container{
+  background-color: #131313;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.footer-ul-icons li a {
+	color: white;
+	font-size: 2rem;
+}
+
+.footer-ul-text li a {
+	color: darkgray;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	font-weight: 100;
+	font-family: sans;
+}
+
+.footer-ul-text li :hover {
+	color: white;
+}
+
+.footer-copyright {
+	color: #aaa;
+	font-size: 1.1rem;
+	margin: auto;
+  padding: 4rem;
+  text-align: center;
+  background: black;
+}
+.love{
+  color: red;
+  font-size: 1.6rem;
+}
+
+.footer-copy {
+	text-transform: uppercase;
+	color: white;
+	font-weight: bolder;
+	font-family: sans-serif;
+	cursor: pointer;
+}
+
+/* styling the deals section */
+
+.deals-cards {
+	font-size: 1.6rem;
+	max-width: 124rem;
+	margin: auto;
+	width: 90%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: minmax(min-content, 20rem);
+	grid-gap: 20px;
 }
