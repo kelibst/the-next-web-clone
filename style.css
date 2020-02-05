@@ -231,6 +231,8 @@ nav {
   font-weight: bold;
   text-decoration: none;
   color: black;
+  display: flex;
+  flex-direction: column;
 }
 
 .latest-news-main span,
@@ -252,15 +254,24 @@ nav {
 
 .latest-rounds h2 {
   color: var(--red);
+  font-size: 3rem;
 }
 
 .latest-rounds ul {
-  text-align: right;
+  float: right;
 }
 
 .latest-rounds ul,
-.latest-rounds li {
+.latest-rounds li a {
   display: inline-flex;
   list-style: none;
   padding: 3px 10px;
+  text-decoration: none;
+  color: var(--red);
+  font-size: 1.6rem
+}
+
+.rounds-items {
+  display: flex;
+  
 }
