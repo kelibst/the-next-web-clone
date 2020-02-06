@@ -265,7 +265,8 @@ footer ul li a{
   display: grid;
 	grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
-  margin: auto;
+  margin: 2rem auto;
+  grid-template-rows: repeat(2, minmax(25rem,auto));
 }
 
 .deals-list {
@@ -281,20 +282,40 @@ footer ul li a{
   letter-spacing: -.015em;
 }
 
-.deals-list i {
-	color: var(--red);
-}
-
 .red-link.small {
 	font-size: 1.4rem;
 	letter-spacing: -0.123px;
 }
 
 .bg{
-  height: 80%;
-  background-position: 0 100%;
-padding-top: 74.5%;
+  height: 70%;
+background-color: #000;
+background-position: 50%;
+background-repeat: no-repeat;
+background-size: cover;
+display: block;
+overflow: hidden;
+padding-top: 50%;
+width: 100%;
+margin-bottom: 8px;
+position: relative;
 }
+
+.story-image {
+	background-color: #000;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	padding-top: 50%;
+	width: 100%;
+	margin-bottom: 8px;
+	position: relative;
+}
+
+
 
 .bg1{
   background-image: url("https://cdnp2.stackassets.com/951117fa37bba0fe8c35739ab4459a0c01b9590f/store/2e4b58df51e1a58ef7a4e81238bf44883552cc806bdcd1a077740a375ec1/sale_25677_primary_image.jpg");
@@ -433,4 +454,47 @@ padding-top: 74.5%;
   display: inline-flex;
   list-style: none;
   padding: 3px 10px;
+}
+
+.deals-card-text {
+	padding: 10px 0;
+}
+
+.deals-card-text a {
+	color: black;
+	font-weight: bolder;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+
+.deals-card--tag {
+	background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 80px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 80px;
+	z-index: 10;
+}
+
+.deals-tag {
+	transform: rotate(45deg);
+	font-size: 14px;
+	font-weight: 700;
+	left: 8px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	top: 20px;
+	width: 100%;
+}
+
+.deals-price span {
+	font-size: 1.4rem;
+	color: darkgray;
+	text-decoration: line-through;
+	margin-right: 10px;
 }
