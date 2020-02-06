@@ -526,11 +526,127 @@ position: relative;
 .rounds-header li {
   display: inline-flex;
   list-style: none;
-  padding: 0px 10px;
+  padding: 0 10px;
   font-size: 1.7rem;
 }
 
 .rounds-main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+/* changes started  */
+.deal{
+  grid-template-rows: repeat(2, minmax(25rem,auto));
+}
+
+.app{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 124rem;
+  margin: 2rem auto;
+  grid-gap: 2rem;
+  font-size: 1.6rem;
+}
+
+
+.app-container{
+  min-height: 27.5rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.app1{
+    background-image: var(--header-gradient), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/02/spotify-logo-796x419.jpg);
+}
+
+.app2{
+  background-image: var(--header-gradient), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Twitter_stock-796x418.jpg);
+}
+
+.app3{
+  background-image: var(--header-gradient), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Twitter_stock-796x418.jpg);
+}
+
+.app4{
+  background-image: var(--header-gradient), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Twitter_stock-796x418.jpg);
+}
+
+.app5{
+  background-image: var(--header-gradient), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Twitter_stock-796x418.jpg);
+}
+
+.app6{
+  background-image: var(--header-gradient), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Twitter_stock-796x418.jpg);
+}
+
+.app7{
+  background-image: var(--header-gradient), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Twitter_stock-796x418.jpg);
+}
+
+.app6{
+  background-image: var(--header-gradient), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Twitter_stock-796x418.jpg);
+}
+
+
+.subheader {
+	display: flex;
+  justify-content: space-between;
+  background: rgba(255,68,34,.06);
+}
+.subheader-text{
+  padding: 1rem 0 1rem 1rem;
+}
+
+.subheader-img {
+	min-width: 9rem;
+	min-height: 9rem;
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/Discord-Featured.jpg");
+	background-repeat: no-repeat;
+	background-position: 50%;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.app ul {
+	margin: 10px;
+	font-size: 1.2rem;
+	padding-bottom: 1rem;
+}
+
+.app li {
+	padding: 1rem;
+	border-bottom: 1px solid lightgray;
+}
+
+.app li:hover{
+  color: darkgray;
+}
+
+.app-container{
+  color: white;
+  font-size: 1.3rem;
+}
+
+.title-container{
+  position: relative;
+  top: 17rem;
+  width: 80%;
+  padding: 0 2rem;
+}
+
+.title-container a{
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.title-container span {
+	font-size: 1rem;
+	color: lightgray;
+	position: relative;
+	top: 2rem;
+}
+
+.app-header{
+  padding-bottom: 3rem;
 }
