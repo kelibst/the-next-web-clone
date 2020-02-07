@@ -769,7 +769,7 @@ footer ul li a {
   }
   .latest-news-main div {
     display: grid;
-    grid-template-columns: 
+    /* grid-template-columns:  */
   }
   .latest-news h2 {
     margin: 2rem 0px
