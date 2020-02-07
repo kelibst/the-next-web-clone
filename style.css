@@ -206,7 +206,7 @@ nav {
   }
   .fa-search {
     position: relative;
-    top: 0px;
+    top: 0;
   }
   .fa-bars {
     color: lightgrey;
@@ -224,7 +224,19 @@ nav {
   .header-date {
     display: none;
   }
+/* 
+  mediaquery for footer */
 
+  .footer-nav-container {
+    width: 100%;
+  }
+  div.deals-cards{
+    /* display: flex;
+    flex-direction: column; */
+    width: 95vw;
+    margin: 0;
+    grid-template-columns: 1fr;
+  }
 }
 footer {
   font-size: 1.6rem;
@@ -749,7 +761,7 @@ footer ul li a {
     width: 100vw;
   }
   .latest-rounds {
-    margin: 0px;
+    margin: 0;
   }
   .rounds-header {
     display: block;
@@ -765,13 +777,13 @@ footer ul li a {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
-    margin: 0px;
+    margin: 0;
   }
   .latest-news-main div {
     display: grid;
   }
   .latest-news h2 {
-    margin: 2rem 0px
+    margin: 2rem 0
   }
 
 }
