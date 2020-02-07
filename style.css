@@ -151,7 +151,7 @@ nav {
 
 /* media queries goes here */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .navigation {
     width: 100%;
   }
@@ -244,6 +244,20 @@ nav {
 }
 
 
+/* media query for tablets */
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  div.deals-cards{
+    grid-template-columns: repeat(3, 1fr);
+    width: 96%;
+    margin: 4rem 0;
+  }
+
+  section.app{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* table media query ends here */
 footer {
   font-size: 1.6rem;
   background-color: var(--dark-grey);
@@ -677,11 +691,7 @@ footer ul li a {
 }
 
 
-.app-container{
-  min-height: 27.5rem;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
+
 .app1{
     background-image: var(--header-gradient), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/02/spotify-logo-796x419.jpg);
 }
@@ -741,8 +751,14 @@ footer ul li a {
 }
 
 .app li {
-	padding: 1rem;
-	border-bottom: 1px solid lightgray;
+	padding: 1rem 0;
+  border-bottom: 1px solid lightgray;
+  list-style: none;
+}
+.app li::before {
+	content: '*';
+	color: red;
+	padding-right: 2rem;
 }
 
 .app li:hover{
@@ -752,6 +768,10 @@ footer ul li a {
 .app-container{
   color: white;
   font-size: 1.3rem;
+  min-height: 27.5rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
 }
 
 .title-container{
@@ -784,7 +804,6 @@ footer ul li a {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
-    margin: 0px;
     grid-auto-rows: 70px;
     grid-gap: 5px;
     margin: 0;
