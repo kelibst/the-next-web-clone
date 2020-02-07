@@ -148,6 +148,9 @@ nav {
       30%,
     10%;
 }
+
+/* media queries goes here */
+
 @media screen and (max-width: 750px) {
   .navigation {
     width: 100%;
@@ -201,7 +204,7 @@ nav {
   .mobile-nav img {
     width: 10rem;
     position: absolute;
-    left: 0px;
+    left: 0;
     height: 5rem;
   }
   .fa-search {
@@ -209,7 +212,6 @@ nav {
     top: 0;
   }
   .fa-bars {
-    color: lightgrey;
     padding: 18px;
     border: 0.5px solid rgba(48, 48, 48, 0.085);
     top: 25px;
@@ -231,13 +233,17 @@ nav {
     width: 100%;
   }
   div.deals-cards{
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     width: 95vw;
     margin: 0;
+  }
+  section.app{
     grid-template-columns: 1fr;
   }
 }
+
+
 footer {
   font-size: 1.6rem;
   background-color: var(--dark-grey);
@@ -348,7 +354,7 @@ footer ul li a {
 }
 .red-link.big {
   font-size: 2.3rem;
-  font-weight: bolder;
+  font-weight: bolder; grid-template-columns: 1fr;
   letter-spacing: -0.015em;
 }
 
@@ -586,7 +592,7 @@ footer ul li a {
 .rounds-header li {
   display: inline-flex;
   list-style: none;
-  padding: 0px 5px;
+  padding: 0 5px;
   /* padding: 0 10px; */
   font-size: 1.7rem;
 }
@@ -681,15 +687,15 @@ footer ul li a {
 }
 
 .app2{
-  background-image: var(--header-gradient), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Twitter_stock-796x418.jpg);
+  background-image: var(--header-gradient), url(https://cdnp1.stackassets.com/cba31166b47b2c151d94a8397c4aa0604771f268/store/04b44dd5593f2a7c175e4dd48292fe76d560b9c1c0536d03345aa8c50141/sale_18367_primary_image.jpg);
 }
 
 .app3{
-  background-image: var(--header-gradient), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Twitter_stock-796x418.jpg);
+  background-image: var(--header-gradient), url(https://cdnp0.stackassets.com/a875072fa31f35279ce85438b376249c54eca996/store/8534f1826bec31d741297d74ee8a30edc0f492f8f74cd08aa4ed0103d42a/sale_14523_primary_image.jpg);
 }
 
 .app4{
-  background-image: var(--header-gradient), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Twitter_stock-796x418.jpg);
+  background-image: var(--header-gradient), url(https://cdnp0.stackassets.com/3d28a01310d47a9ece38eb1a189790944b8e512e/store/bd912e50369c037674603acf0ef1a582b658ef72662651d6eab3d7aa657e/sale_25558_primary_image.jpg);
 }
 
 .app5{
@@ -701,7 +707,7 @@ footer ul li a {
 }
 
 .app7{
-  background-image: var(--header-gradient), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Twitter_stock-796x418.jpg);
+  background-image: var(--header-gradient), url(https://cdnp1.stackassets.com/3c7255c565df64669fabc969bfd7cbaa1b2178c4/store/36c7d535db46e3b794b7b76c698d5ccfc005e8b164028011bc6b85496690/sale_25675_primary_image.jpg);
 }
 
 .app6{
@@ -755,6 +761,7 @@ footer ul li a {
   padding: 0 2rem;
 }
 @media (max-width: 750px) {
+  
   .rounds-main {
     display: grid;
     grid-template-columns: 1fr;
@@ -787,7 +794,25 @@ footer ul li a {
     margin: 2rem 0
   }
 
-}
+  .footer-ul-icons li a{
+    font-size: 1.2rem;
+  }
+
+  .footer-ul-icons > li{
+    padding: 5px;
+  }
+
+  .footer-nav-container{
+    width: 89%;
+  }
+
+  .footer-ul-text {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+} 
+/* closing mediaqueries */
 
 .title-container a{
   color: white;
