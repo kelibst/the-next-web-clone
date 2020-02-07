@@ -1,5 +1,3 @@
-
-
 * {
   margin: 0;
   padding: 0;
@@ -149,6 +147,52 @@ nav {
     10%;
 }
 
+.logo img {
+  width: 40%;
+  /* padding: 0px 0px 30vh; */
+}
+.header-date {
+  float: right;
+  font-size: 1.6rem;
+}
+
+.header-left-contents {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 45%;
+  width: 100%;
+  grid-column: 1/3;
+  font-size: 1.4rem;
+}
+
+.header-right-contents {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 45%;
+  width: 100%;
+  grid-column: 1/3;
+  font-size: 1.4rem;
+  padding: 10px;
+}
+
+.header-left-contents h2 {
+  font-size: 4.6rem;
+}
+.header-right-contents h2 {
+  font-size: 3rem;
+}
+
+.header-left-contents ul,
+.header-left-contents li,
+.header-right-contents ul,
+.header-right-contents li {
+  display: flex;
+  padding: 0 8px 0 0;
+  color: grey;
+}
+
 /* media queries goes here */
 
 @media screen and (max-width: 750px) {
@@ -169,20 +213,21 @@ nav {
   }
   .header-left {
     height: 18rem;
-    display: block
+    display: block;
   }
   .header-right {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
+    height: 100%;
   }
   .header-right div {
     height: 18rem;
-    display: block
+    display: block;
   }
-  .header-left-contents{
+  .header-left-contents {
     width: 100%;
-    height: 100%
+    height: 100%;
   }
 
   .top-nav {
@@ -194,7 +239,7 @@ nav {
     position: fixed;
     height: 5rem;
     background: white;
-    width: 97%;
+    width: 100%;
     z-index: 1000;
   }
   .mobile-nav ul {
@@ -226,23 +271,22 @@ nav {
   .header-date {
     display: none;
   }
-/* 
+  /* 
   mediaquery for footer */
 
   .footer-nav-container {
     width: 100%;
   }
-  div.deals-cards{
+  div.deals-cards {
     display: flex;
     flex-direction: column;
     width: 95vw;
     margin: 0;
   }
-  section.app{
+  section.app {
     grid-template-columns: 1fr;
   }
 }
-
 
 footer {
   font-size: 1.6rem;
@@ -354,7 +398,8 @@ footer ul li a {
 }
 .red-link.big {
   font-size: 2.3rem;
-  font-weight: bolder; grid-template-columns: 1fr;
+  font-weight: bolder;
+  grid-template-columns: 1fr;
   letter-spacing: -0.015em;
 }
 
@@ -421,51 +466,6 @@ footer ul li a {
 
 .bg8 {
   background-image: url('https://cdnp2.stackassets.com/7a52fa1ea563b69972a625495a4d799f0da1196b/store/44902fe2b6d0ff858be14781320f89c96e10d0b57c4015dea1aafcea7553/sale_25322_primary_image.jpg');
-}
-.logo img {
-  width: 40%;
-  /* padding: 0px 0px 30vh; */
-}
-.header-date {
-  float: right;
-  font-size: 1.6rem;
-}
-
-.header-left-contents {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 45%;
-  width: 100%;
-  grid-column: 1/3;
-  font-size: 1.4rem;
-}
-
-.header-right-contents {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 50%;
-  width: 100%;
-  grid-column: 1/3;
-  font-size: 1.4rem;
-  padding: 10px;
-}
-
-.header-left-contents h2 {
-  font-size: 5rem;
-}
-.header-right-contents h2 {
-  font-size: 3rem;
-}
-
-.header-left-contents ul,
-.header-left-contents li,
-.header-right-contents ul,
-.header-right-contents li {
-  display: flex;
-  padding: 0 8px 0 0;
-  color: grey;
 }
 
 .latest-news {
@@ -663,11 +663,11 @@ footer ul li a {
   padding: 5px 5px 5px 0;
 }
 /* changes started  */
-.deal{
-  grid-template-rows: repeat(2, minmax(25rem,auto));
+.deal {
+  grid-template-rows: repeat(2, minmax(25rem, auto));
 }
 
-.app{
+.app {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-width: 124rem;
@@ -676,109 +676,132 @@ footer ul li a {
   font-size: 1.6rem;
 }
 
-
-.app-container{
+.app-container {
   min-height: 27.5rem;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-.app1{
-    background-image: var(--header-gradient), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/02/spotify-logo-796x419.jpg);
+.app1 {
+  background-image: var(--header-gradient),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/02/spotify-logo-796x419.jpg);
 }
 
-.app2{
-  background-image: var(--header-gradient), url(https://cdnp1.stackassets.com/cba31166b47b2c151d94a8397c4aa0604771f268/store/04b44dd5593f2a7c175e4dd48292fe76d560b9c1c0536d03345aa8c50141/sale_18367_primary_image.jpg);
+.app2 {
+  background-image: var(--header-gradient),
+    url(https://cdnp1.stackassets.com/cba31166b47b2c151d94a8397c4aa0604771f268/store/04b44dd5593f2a7c175e4dd48292fe76d560b9c1c0536d03345aa8c50141/sale_18367_primary_image.jpg);
 }
 
-.app3{
-  background-image: var(--header-gradient), url(https://cdnp0.stackassets.com/a875072fa31f35279ce85438b376249c54eca996/store/8534f1826bec31d741297d74ee8a30edc0f492f8f74cd08aa4ed0103d42a/sale_14523_primary_image.jpg);
+.app3 {
+  background-image: var(--header-gradient),
+    url(https://cdnp0.stackassets.com/a875072fa31f35279ce85438b376249c54eca996/store/8534f1826bec31d741297d74ee8a30edc0f492f8f74cd08aa4ed0103d42a/sale_14523_primary_image.jpg);
 }
 
-.app4{
-  background-image: var(--header-gradient), url(https://cdnp0.stackassets.com/3d28a01310d47a9ece38eb1a189790944b8e512e/store/bd912e50369c037674603acf0ef1a582b658ef72662651d6eab3d7aa657e/sale_25558_primary_image.jpg);
+.app4 {
+  background-image: var(--header-gradient),
+    url(https://cdnp0.stackassets.com/3d28a01310d47a9ece38eb1a189790944b8e512e/store/bd912e50369c037674603acf0ef1a582b658ef72662651d6eab3d7aa657e/sale_25558_primary_image.jpg);
 }
 
-.app5{
-  background-image: var(--header-gradient), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Twitter_stock-796x418.jpg);
+.app5 {
+  background-image: var(--header-gradient),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Twitter_stock-796x418.jpg);
 }
 
-.app6{
-  background-image: var(--header-gradient), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Twitter_stock-796x418.jpg);
+.app6 {
+  background-image: var(--header-gradient),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Twitter_stock-796x418.jpg);
 }
 
-.app7{
-  background-image: var(--header-gradient), url(https://cdnp1.stackassets.com/3c7255c565df64669fabc969bfd7cbaa1b2178c4/store/36c7d535db46e3b794b7b76c698d5ccfc005e8b164028011bc6b85496690/sale_25675_primary_image.jpg);
+.app7 {
+  background-image: var(--header-gradient),
+    url(https://cdnp1.stackassets.com/3c7255c565df64669fabc969bfd7cbaa1b2178c4/store/36c7d535db46e3b794b7b76c698d5ccfc005e8b164028011bc6b85496690/sale_25675_primary_image.jpg);
 }
 
-.app6{
-  background-image: var(--header-gradient), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Twitter_stock-796x418.jpg);
+.app6 {
+  background-image: var(--header-gradient),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Twitter_stock-796x418.jpg);
 }
-
 
 .subheader {
-	display: flex;
+  display: flex;
   justify-content: space-between;
-  background: rgba(255,68,34,.06);
+  background: rgba(255, 68, 34, 0.06);
 }
-.subheader-text{
+.subheader-text {
   padding: 1rem 0 1rem 1rem;
 }
 
 .subheader-img {
-	min-width: 9rem;
-	min-height: 9rem;
-	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/Discord-Featured.jpg");
-	background-repeat: no-repeat;
-	background-position: 50%;
+  min-width: 9rem;
+  min-height: 9rem;
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/Discord-Featured.jpg');
+  background-repeat: no-repeat;
+  background-position: 50%;
   background-size: cover;
   cursor: pointer;
 }
 
 .app ul {
-	margin: 10px;
-	font-size: 1.2rem;
-	padding-bottom: 1rem;
+  margin: 10px;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
 }
 
 .app li {
-	padding: 1rem;
-	border-bottom: 1px solid lightgray;
+  padding: 1rem;
+  border-bottom: 1px solid lightgray;
 }
 
-.app li:hover{
+.app li:hover {
   color: darkgray;
 }
 
-.app-container{
+.app-container {
   color: white;
   font-size: 1.3rem;
 }
 
-.title-container{
+.title-container {
   position: relative;
   top: 17rem;
   width: 80%;
   padding: 0 2rem;
 }
 @media (max-width: 750px) {
-  
   .rounds-main {
     display: grid;
     grid-template-columns: 1fr;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
   }
   .latest-rounds {
-    margin: 0;
+    margin: 10px;
+    width: 100%;
   }
   .rounds-header {
     display: block;
   }
 
-  .header-left-contents h2,.header-right-contents h2 {
-    font-size: 1.7rem
+  .rounds-header ul {
+    position: relative;
+    left: 0px;
+    padding: 0px;
+    display: block;
   }
-  .header-right-contents,.header-left-contents p{
-    font-size: 1.2rem
+  .rounds-header li {
+    text-align: left;
+    display: block;
+    flex-direction: column;
+    padding: 0px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .header-left-contents h2,
+  .header-right-contents h2 {
+    font-size: 1.7rem;
+  }
+  .header-right-contents,
+  .header-left-contents p {
+    font-size: 1.2rem;
   }
   .latest-news-main {
     display: grid;
@@ -789,33 +812,33 @@ footer ul li a {
     grid-gap: 5px;
     margin: 0;
   }
-  .latest-news-main >div {
+  .latest-news-main > div {
     display: grid;
     grid-template-columns: 1.5fr 4fr;
     height: 7rem;
     grid-gap: 10px;
-    margin: 5px 10px
+    margin: 5px 10px;
   }
   .latest-news h2 {
-    margin: 2rem 0
+    margin: 2rem 0;
   }
-  .latest-news-main >div img{
+  .latest-news-main > div img {
     width: 100%;
     height: 100%;
   }
-  .latest-news-main >div a{
-   font-size: 1.5rem
+  .latest-news-main > div a {
+    font-size: 1.5rem;
   }
 
-  .footer-ul-icons li a{
+  .footer-ul-icons li a {
     font-size: 1.2rem;
   }
 
-  .footer-ul-icons > li{
+  .footer-ul-icons > li {
     padding: 5px;
   }
 
-  .footer-nav-container{
+  .footer-nav-container {
     width: 89%;
   }
 
@@ -823,11 +846,10 @@ footer ul li a {
     flex-wrap: wrap;
     justify-content: center;
   }
-
-} 
+}
 /* closing mediaqueries */
 
-.title-container a{
+.title-container a {
   color: white;
   font-weight: bolder;
   text-decoration: none;
@@ -835,12 +857,37 @@ footer ul li a {
 }
 
 .title-container span {
-	font-size: 1rem;
-	color: lightgray;
-	position: relative;
-	top: 2rem;
+  font-size: 1rem;
+  color: lightgray;
+  position: relative;
+  top: 2rem;
 }
 
-.app-header{
+.app-header {
   padding-bottom: 3rem;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .latest-news {
+    width: 100%;
+  }
+  .latest-news-main{
+    width:100%;
+    margin: 0px
+  }
+  .latest-news h2 {
+    margin:2rem 0px
+  }
+  .latest-rounds {
+    width:100%;
+    margin: 0px
+  }
+  .rounds-main {
+    width:100%;
+    grid-template-columns:repeat(3, 1fr)
+  }
+  .rounds-last{
+    display:none
+  }
 }
