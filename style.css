@@ -136,9 +136,8 @@ nav {
     var(--header-gradient),
     url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FNew-Project-10.png&signature=62be7b56c9b11cfa3ca8d429c4e23c18);
   height: 60vh;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   padding: 10px;
+  position: relative;
 }
 
 .header-right {
@@ -151,6 +150,7 @@ nav {
   background:
     var(--img-gradient),
     url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Copy-of-Copy-of-Copy-of-Copy-of-...-1-1-796x417.png);
+  position: relative;
 }
 
 .header-right-bottom {
@@ -159,10 +159,12 @@ nav {
     url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/earth-1149733_1920-796x529.jpg)
       30%,
     10%;
+  position: relative;
 }
 
 .logo img {
   width: 40%;
+  float: left;
 }
 
 .header-date {
@@ -170,34 +172,47 @@ nav {
   font-size: 1.6rem;
 }
 
+.header-text {
+  color: white;
+  text-decoration: none;
+  font-size: 5.6rem;
+  font-weight: bolder;
+  letter-spacing: -0.015em;
+}
+
 .header-left-contents {
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 45%;
   width: 100%;
-  grid-column: 1/3;
   font-size: 1.4rem;
-  padding-bottom: 15px;
+  position: absolute;
+  bottom: 10px;
 }
 
 .header-right-contents {
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 45%;
   width: 100%;
-  grid-column: 1/3;
   font-size: 1.4rem;
   padding: 15px;
+  position: absolute;
+  bottom: 10px;
 }
 
 .header-left-contents h2 {
   font-size: 4.6rem;
+  font-weight: bolder;
+}
+
+.latest-news h3 {
+  max-width: 124rem;
+  margin: 2rem auto;
 }
 
 .header-right-contents h2 {
   font-size: 3rem;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .header-left-contents ul,
@@ -205,8 +220,8 @@ nav {
 .header-right-contents ul,
 .header-right-contents li {
   display: flex;
-  padding: 0 8px 0 0;
-  color: grey;
+  padding: 10px 8px 0 0;
+  color: #d4d2d2;
 }
 
 /* media queries goes here */
@@ -215,6 +230,17 @@ nav {
   .navigation {
     width: 100%;
   }
+
+  div.deals-card-text a {
+    font-size: 1.3rem;
+  }
+
+  .latest-news-main a:hover {
+    color: var(--red);
+    text-decoration: underline;
+  }
+
+  .logo { display: none; }
 
   div.footer-copyright p {
     display: block;
@@ -244,21 +270,12 @@ nav {
     display: block;
   }
 
-  .header-right {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    height: 100%;
-  }
-
   .header-right div {
-    height: 18rem;
     display: block;
   }
 
-  .header-left-contents {
-    width: 100%;
-    height: 100%;
+  .header-text {
+    font-size: 1.6rem;
   }
 
   .top-nav {
@@ -323,10 +340,6 @@ nav {
 
   div.deals-card--tag {
     display: none;
-  }
-
-  div.deals-card-text a {
-    font-size: 1.3rem;
   }
 
   div.deals-card-text {
@@ -928,29 +941,24 @@ nav {
   }
 
   .latest-news-main {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    grid-auto-rows: 70px;
-    grid-gap: 10px;
     margin: 0;
   }
 
   .latest-news-main > div {
-    display: grid;
-    grid-template-columns: 1.5fr 4fr;
-    height: 7rem;
-    grid-gap: 10px;
-    margin: 5px 10px;
+    display: flex;
   }
 
   .latest-news h2 {
     margin: 2rem 0;
   }
 
-  .latest-news-main > div img {
-    width: 100%;
-    height: 100%;
+  .latest-news-main img {
+    width: 100px;
+    height: 80px;
+    margin-right: 2rem;
   }
 
   .latest-news-main > div a {
@@ -982,18 +990,8 @@ nav {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .header-right-contents {
-    top: 30%;
-    padding: 5px;
-    font-size: 80%;
-  }
-
   .header-right-contents li {
     font-size: 1.2rem;
-  }
-
-  .header-left-contents {
-    top: 25%;
   }
 
   .latest-news {
