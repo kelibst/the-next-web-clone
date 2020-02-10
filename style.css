@@ -163,8 +163,6 @@ nav {
 
 .logo img {
   width: 40%;
-
-  /* padding: 0px 0px 30vh; */
 }
 
 .header-date {
@@ -301,6 +299,29 @@ nav {
 
   .header-date {
     display: none;
+  }
+
+  div.deals-card {
+    display: flex;
+  }
+
+  div.bg {
+    padding-top: 7.5rem;
+    width: 75px;
+    height: 0;
+    margin-right: 2rem;
+  }
+
+  div.deals-card--tag {
+    display: none;
+  }
+
+  div.deals-card-text a {
+    font-size: 1.3rem;
+  }
+
+  div.deals-card-text {
+    padding: 0;
   }
 
   /*
@@ -599,8 +620,6 @@ nav {
   display: inline-flex;
   list-style: none;
   padding: 0 5px;
-
-  /* padding: 0 10px; */
   font-size: 1.7rem;
 }
 

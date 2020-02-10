@@ -14,7 +14,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/kelibst/the-next-web-clone/d1f0a957378c6b079657041a03a0baf270e030f4/index.html/)
+[Live Demo Link](https://unruffled-jackson-976106.netlify.com)
 
 ## Getting Started
 
