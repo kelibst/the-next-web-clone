@@ -1,13 +1,8 @@
 {
   "name": "the-next-web-clone",
   "version": "1.0.0",
-<<<<<<< HEAD
-  "description": "clone of the next web",
-  "main": "app.js",
-=======
   "description": "",
   "main": "stylelint.config.js",
->>>>>>> d9cee127c21369995c8c484a182fd4b186813bb2
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,31 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/kelibst/the-next-web-clone.git"
   },
-<<<<<<< HEAD
-  "keywords": [
-    "clone",
-    "the",
-    "next",
-    "web"
-  ],
-  "author": "Patrick and Keli",
-=======
   "keywords": [],
   "author": "",
->>>>>>> d9cee127c21369995c8c484a182fd4b186813bb2
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kelibst/the-next-web-clone/issues"
   },
   "homepage": "https://github.com/kelibst/the-next-web-clone#readme",
-<<<<<<< HEAD
-  "dependencies": {},
-  "devDependencies": {
-    "stylelint": "^13.0.0",
-    "stylelint-config-recommended": "^3.0.0"
-=======
   "dependencies": {
     "stylelint-config-standard": "^19.0.0"
->>>>>>> d9cee127c21369995c8c484a182fd4b186813bb2
   }
 }
