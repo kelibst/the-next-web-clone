@@ -216,7 +216,15 @@ nav {
     width: 100%;
   }
 
+  div.footer-copyright p {
+    display: block;
+  }
+
   .navigation li {
+    display: none;
+  }
+
+  .footer-ul-text > li:nth-child(3) {
     display: none;
   }
 
@@ -386,6 +394,10 @@ nav {
   padding: 4rem;
   text-align: center;
   background: black;
+}
+
+.footer-copyright p {
+  display: block;
 }
 
 .love {
