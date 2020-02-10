@@ -334,7 +334,7 @@ nav {
   div.deals-cards {
     display: flex;
     flex-direction: column;
-    width: 95vw;
+    width: 100%;
     margin: 0;
   }
 
@@ -376,7 +376,7 @@ nav {
 .footer {
   font-size: 1.6rem;
   background-color: var(--dark-grey);
-  width: 100vw;
+  width: 100%;
 }
 
 .footer-copyright {
