@@ -994,6 +994,10 @@ nav {
     font-size: 1.2rem;
   }
 
+  .header-right-contents h2 {
+    font-size: 2rem;
+  }
+
   .latest-news {
     width: 100%;
   }
