@@ -1,0 +1,28 @@
+{
+  "name": "the-next-web-clone",
+  "version": "1.0.0",
+  "description": "clone of the next web",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelibst/the-next-web-clone.git"
+  },
+  "keywords": [
+    "clone",
+    "the",
+    "next",
+    "web"
+  ],
+  "author": "Patrick and Keli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kelibst/the-next-web-clone/issues"
+  },
+  "homepage": "https://github.com/kelibst/the-next-web-clone#readme",
+  "dependencies": {
+    "stylelint-config-standard": "^19.0.0"
+  }
+}
